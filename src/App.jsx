@@ -22,8 +22,6 @@ function App() {
 
     }
 
-
-
     if(colorName.trim().length < 3 || colorCode.trim().length < 6 || !regex.test(colorCode)) {
 
       setFormError(true)
@@ -37,12 +35,7 @@ function App() {
       setColorName('')
       setColorCode('')
 
-
-    }
-
-
-
-    
+    }    
 
   }
 
