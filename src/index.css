@@ -10,4 +10,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
+    
 }
+
+.color-card{
+
+  width: 100px;
+  height: 100px;
+
+
+}
+
+.errorMessage{
+
+  display: none;
+
+}
+
+.form-error .errorMessage {
+  display: block;
+}
+
