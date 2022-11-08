@@ -41,7 +41,6 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Carga de estudiantes</h1>
      <form className={formError ? 'form-error' : ''} onSubmit={event => addColorCard(event)}>
       {/* Comece a desenvolver o seu Código por aqui :) */}
         
@@ -51,14 +50,16 @@ function App() {
         <input type="text" id="colorName" value={colorName} onChange={event => setColorName(event.target.value)} />
 
         <label htmlFor="color">Cor</label>
-        <input type="text" id="color" value={colorCode} onChange={event => setColorCode(event.target.value)} />
+        <input placeholder='Insira sua cor no formato Hexadecimal' type="text" id="color" value={colorCode} onChange={event => setColorCode(event.target.value)} />
 
         <button type='submit'> Adicionar </button>
         <span className='errorMessage'> Por favor, verifique os dados inseridos no formulário </span>
      </form>
 
-      <div>
+      <div >
         <h2>Cores Favoritas</h2>
+          <div className='card-conteiner'>
+
           {
             colorsList.map(
               colorData => {
@@ -73,7 +74,7 @@ function App() {
             )
 
           }
-
+        </div>
       </div>
 
     </div>    

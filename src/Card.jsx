@@ -3,8 +3,11 @@
 export function Card (props) {
   return (
     <div className="color-card" style={{backgroundColor: props.colorData.colorCode}} >
-      <h3>{props.colorData.colorName}</h3>
-      <h2>{props.colorData.colorCode}</h2>
+      <div className="card-text">
+        <h3>{props.colorData.colorName}</h3>
+        <h2>{props.colorData.colorCode}</h2>
+
+      </div>       
     </div>
   )
 }
